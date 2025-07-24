@@ -1,4 +1,3 @@
-﻿// Prosty efekt powitania
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Strona załadowana. Witaj, Marek!");
+﻿
+document.addEventListener("DOMContentLoaded", () => {console.log("Siemanko");
 });

@@ -16,3 +16,11 @@ a {
     a:hover {
         text-decoration: underline;
     }
+
+.header-background {
+    background-image: url("../images/waves_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+}

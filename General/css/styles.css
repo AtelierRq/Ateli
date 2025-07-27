@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-Regular.ttf") format("truetype");
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
     line-height: 1.6;
 }
 

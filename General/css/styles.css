@@ -18,9 +18,12 @@ a {
     }
 
 .header-background {
-    background-image: url("../images/waves_bg.jpg");
+    background-image: url("../images/abstract_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-}
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   

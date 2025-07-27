@@ -13,8 +13,15 @@ body {
 }
 
 h2 {
-    margin-top: 40px;
-    color: #343a40;
+    color: white;
+    position: relative;
+    top: 60px;
+}
+
+h10 {
+    color: white;
+    position: relative;
+    top: 15px;
 }
 
 a {

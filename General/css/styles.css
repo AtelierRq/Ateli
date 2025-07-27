@@ -24,6 +24,12 @@ h10 {
     top: 15px;
 }
 
+h11 {
+    color: white;
+    position: relative;
+    top: 30px;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -67,4 +73,8 @@ a {
 
 .custom-footer {
     color: darkgray;
+}
+
+.custom-font {
+    font-family: 'Eras ITC', sans-serif;
 }

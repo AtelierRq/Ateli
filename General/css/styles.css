@@ -78,3 +78,13 @@ a {
 .custom-font {
     font-family: 'Eras ITC', sans-serif;
 }
+
+.mute-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}

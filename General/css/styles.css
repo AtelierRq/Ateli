@@ -126,6 +126,32 @@ a {
 }
 
 
+/*Sociale linki*/
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 32px;               /*   1rem = 16px   */
+    margin-top: 32px;
+    font-family: 'Eras ITC', sans-serif;
+}
+
+.social-links a {
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.social-links i {
+    margin-right: 0.5rem;
+}
+/*-----------------------------------------------*/
+
+
 /* Gra 1*/
 .input-row {
     display: flex;
@@ -213,5 +239,4 @@ button:hover {
 .retry-button button:hover {
     background-color: #ff8888;
 }
-
 /*-----------------------------*/

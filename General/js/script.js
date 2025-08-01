@@ -22,11 +22,17 @@ const maxAttempts = 10;
 
 function generateCode() {
     secretCode = [];
-    while (secretCode.length < 4) {
-        let digit = Math.floor(Math.random() * 10);
-        secretCode.push(digit);
+
+    const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    // Losowo przetasowuje cyfry
+    for (let i = digits.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [digits[i], digits[j]] = [digits[j], digits[i]];
     }
-    console.log("Secret code:", secretCode); // Możesz usunąć w wersji produkcyjnej
+
+    secretCode = digits.slice(0, 4);  // Wybiera pierwsze 4 niepowtarzające się cyfry
+    //console.log("Secret code:", secretCode);
 }
 
 function checkGuess() {

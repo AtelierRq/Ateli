@@ -21,7 +21,7 @@
         <source src="../videos/background.mp4" type="video/mp4">
     </video>
 
-    <audio id="audio" autoplay loop audio.volume="0.5" class="background-audio">
+    <audio id="audio" autoplay loop class="background-audio">
         <source src="../audios/Space-Ambient.mp4">
     </audio>
 
@@ -41,19 +41,64 @@
         <h10>~ Albert Einstein</h10>
     </section>
 
+    <hr class="thin-divider shadow">
+
     <section class="text-center container my-5">
-        <img src="images/image2.jpg" alt="image2" class="img-fluid rounded shadow mt-5" style="max-width: 300px;">
+        <img src="images/image2.jpg" alt="image2" class="img-fluid rounded shadow " style="max-width: 300px;">
     </section>
 
     <section class="text-center container my-5 custom-font">
-        <h2>What is this page about?</h2>
+        <h11>What is this page about?</h11>
     </section>
+
+    <section class="text-center text-white container custom-font">
+        <h12>You will find 3 games here. All have their own different mechanics and are provided with detailed descriptions about their rules and objectives. Have fun playing! ♥</h12>
+    </section>
+
+    <hr class="thin-divider shadow">
 
     <section class="text-center text-white container my-5 custom-font">
-        <h11>It is about something you will find out later.</h11>
+        <h11>Game 1</h11>
     </section>
 
-    <footer class="text-center custom-footer p-4 small">
+    <section class="text-center text-white container custom-font">
+        <h12>Your task is to break a secret 4-digit code consisting of digits from 0 to 9. The code is randomly generated at the start of each game. You have 10 attempts to guess the code. After each attempt, you'll receive feedback:</h12>
+        <h12>how many digits are in the correct position (correct), and</h12>
+        <h12>how many digits are in the code but in the wrong position (present).</h12>
+    </section>
+
+    <hr class="just-space">
+
+    <div class="input-row custom-font">
+        <input type="number" min="0" max="9" id="digit1" />
+        <input type="number" min="0" max="9" id="digit2" />
+        <input type="number" min="0" max="9" id="digit3" />
+        <input type="number" min="0" max="9" id="digit4" />
+    </div>
+
+    <div class="submit-button custom-font">
+        <button onclick="checkGuess()">Check</button>
+    </div>
+
+    <div class="log" id="log"></div>
+
+    <div class="retry-button custom-font">
+        <button onclick="location.reload()">Retry</button>
+    </div>
+
+    <hr class="thin-divider shadow">
+
+    <section class="text-center text-white container my-5 custom-font">
+        <h11>Game 2</h11>
+    </section>
+
+    <section class="text-center text-white container custom-font">
+        <h12>To be done</h12>
+    </section>
+
+    <hr class="just-space">
+
+    <footer class="text-center custom-footer p-4 mt-5 small">
         &copy; 2025 Ateli ♥
     </footer>
 </body>

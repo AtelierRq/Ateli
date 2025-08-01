@@ -78,7 +78,7 @@ function checkGuess() {
     log.prepend(entry);
 
     if (correctPlace === 4) {
-        alert("🎉 You won, grats!");
+        alert("🎉 You won, congrats!");
     } else if (attempts >= maxAttempts) {
         alert("💥 You lost, the code is: " + secretCode.join(""));
     }

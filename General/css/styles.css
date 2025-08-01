@@ -128,22 +128,25 @@ a {
 
 /*Sociale linki*/
 .social-links {
+    position: absolute;
+    top: -16px;
+    left: 16px;
     display: flex;
     justify-content: center;
-    gap: 32px;               /*   1rem = 16px   */
+    gap: 16px; /*   1rem = 16px   */
     margin-top: 32px;
     font-family: 'Eras ITC', sans-serif;
 }
 
 .social-links a {
-    color: cornflowerblue;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #ffffff;
+    color: lightskyblue;
 }
 
 .social-links i {

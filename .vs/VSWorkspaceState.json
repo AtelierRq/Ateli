@@ -1,14 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\General",
-    "\\General\\audios",
-    "\\General\\css",
-    "\\General\\fonts",
-    "\\General\\images",
-    "\\General\\js",
-    "\\General\\videos"
+    "\\fonts",
+    "\\images",
+    "\\js"
   ],
-  "SelectedNode": "\\General\\images\\image2.jpg",
+  "SelectedNode": "\\js",
   "PreviewInSolutionExplorer": false
 }

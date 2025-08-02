@@ -98,7 +98,7 @@ function checkGuess() {
     const log = document.getElementById("log");
     const entry = document.createElement("div");
     entry.className = "log-entry custom-font";
-    entry.textContent = `Attempt: ${attempts}: ${guess.join("")} → ${correctPlace} correct, ${correctDigit} current`;
+    entry.textContent = `Attempt: ${attempts}: ${guess.join("")} → ${correctPlace} correct, ${correctDigit} present`;
     log.prepend(entry);
 
     if (correctPlace === 4) {

@@ -13,6 +13,24 @@ muteButton.addEventListener("click", function () {
     muteButton.textContent = audio.muted ? "🔇" : "🔊";
 });
 
+// Alert discord
+function showDiscord() {
+    alert("Discord: atelierr");
+}
+
+// Animacja scrollowanie w dół na stronie
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target); // usu
+        }
+    });
+}, { threshold: 0.1 });
+
+reveals.forEach((reveal) => observer.observe(reveal));
 
 
 // Gra 1
@@ -84,13 +102,14 @@ function checkGuess() {
     log.prepend(entry);
 
     if (correctPlace === 4) {
-        alert("🎉 You won, congrats!");
+        alert("You won, congrats! =)");
     } else if (attempts >= maxAttempts) {
-        alert("💥 You lost, the code is: " + secretCode.join(""));
+        alert("You lost, the code is: " + secretCode.join(""));
     }
 }
 
 
+// Obsługa przycisku sprawdzania i QoL wpisywania xD
 const inputs = document.querySelectorAll('.input-row input[type="number"]');
 
 inputs.forEach((input, index) => {
@@ -117,3 +136,4 @@ inputs.forEach((input, index) => {
 generateCode();
 
 // ------------------------------------------------------------------------
+
